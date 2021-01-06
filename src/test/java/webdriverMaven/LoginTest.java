@@ -23,6 +23,7 @@ public class LoginTest {
 		driver.get("https://app.simplicity.kiwi/login");
 		driver.findElement(By.id("email")).sendKeys("manjitam@gmail.com");
 		driver.findElement(By.id("password")).sendKeys("abcd");
+		driver.findElement(By.xpath("//*[@id=\"root\"]/div/div/div[1]/form/div/div[2]/div/button/span[1]")).click();
 	}
 
 	@AfterSuite
